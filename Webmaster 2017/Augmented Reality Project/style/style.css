@@ -1,0 +1,375 @@
+.techBox  {
+	background: #353535;
+	font-size: 15px ;
+	position: absolute;
+	width: 730px;
+	height: 500px;
+	margin-top: 100px;
+	right: 0px;
+	margin-right: 120px ;
+	text-align: center;
+	border-style: groove;
+	border-color: lightblue skyblue lightblue skyblue;
+	border-width: 5px;
+	box-shadow: 0px 0px 30px #004eff;
+	color: turquoise;
+	overflow: hidden;
+	z-index: -1 ;
+}
+.techBox h1 {
+	font-family: "The Machine" ;
+}
+.blackBox {
+	background: rgba(0,0,0,1);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-style: groove;
+	border-color: lightblue skyblue lightblue skyblue;
+	border-width: 5px;
+	z-index: -2 ;
+}
+@font-face {
+	font-family: The Machine;
+	src: url('../fonts and images/TH3 MACHINE.ttf') format('truetype');
+}
+.Title {
+	font: 34px "The Machine", Helvetica, sans-serif ;
+	color: turquoise;
+	position: fixed;
+	left: 2rem;
+	background: rgba(0,0,0,0.75);
+	border-radius: 10px;
+	z-index: 2 ;
+}
+.Sub-Title {
+	font: 32px "The Machine", Helvetica, sans-serif ;
+	color: turquoise;
+	position: fixed;
+	z-index: 2 ;
+	background: rgba(0,0,0,0.75);
+	border-radius: 10px;
+	left: 8rem;
+	top:40px;
+}
+polygon {
+  position: fixed;
+  z-index: 2 ;
+  stroke:stroke="url(#linear)" ;
+  stroke-width: 5;
+  stroke-dasharray: 100, 750;
+  stroke-dashoffset: 0; 
+  fill: none;
+  animation: border 5s linear infinite;
+}
+.selectionBar {
+	background: url('../fonts and images/Selection Bar.png') ;
+	background-size: cover;
+	height: 750px;
+	width: 400px;
+	position: fixed;
+}
+.technologySlider h2 {
+	position: absolute;
+	top: -10px;
+	-webkit-transform: skew(20deg);
+	color: turquoise;
+	background:-webkit-linear-gradient(left top,black, turquoise);
+	width: 200px;
+	left: 70px;
+}
+.techCircle {
+	width: 50px;
+	height: 50px;
+	background: rgba(0,0,0,0.5);
+	border-radius: 50px;
+	position: absolute;
+	z-index: 2 ;
+	top: 130px;
+}
+.innerTCircle {
+	width: 20px;
+	height: 20px;
+	background: rgba(102,255,206,1);
+	border-radius: 50px;
+	margin-left: 15px ;
+	margin-top: 15px ;
+	-webkit-animation: pulse 1s linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate-reverse ;
+}
+.useSlider h2 {
+	position: absolute;
+	top: -10px;
+	-webkit-transform: skew(20deg);
+	color: turquoise;
+	background:-webkit-linear-gradient(left top,black, turquoise);
+	width: 100px;
+	left: 70px;
+}
+.uCircle {
+	width: 50px;
+	height: 50px;
+	background: rgba(0,0,0,0.5);
+	border-radius: 50px;
+	position: absolute;
+	z-index: 2 ;
+	top: 185px;
+}
+.innerUCircle {
+	width: 20px;
+	height: 20px;
+	background: rgba(102,255,206,1);
+	border-radius: 50px;
+	margin-left: 15px ;
+	margin-top: 15px ;
+	-webkit-animation: pulse 1s linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate-reverse ;
+}
+.bAndcSlider h2 {
+	position: absolute;
+	top: -10px;
+	white-space: nowrap;
+	color:rgba(0,0,0,0);
+	-webkit-transform: skew(20deg);
+	color: turquoise;
+	background:-webkit-linear-gradient(left top,black, turquoise);
+	width: 325px;
+	left: 70px;
+}
+.bCircle {
+	width: 50px;
+	height: 50px;
+	background: rgba(0,0,0,0.5);
+	border-radius: 50px;
+	position: absolute;
+	z-index: 2 ;
+	top: 240px;
+}
+.innerBCircle {
+	width: 20px;
+	height: 20px;
+	background: rgba(102,255,206,1);
+	border-radius: 50px;
+	margin-left: 15px ;
+	margin-top: 15px ;
+	-webkit-animation: pulse 1s linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate-reverse ;
+}
+.triangle{
+	bottom: 10px;
+	left: 250px;
+    height: 100px;
+    width: 100px;
+    position:relative;
+    overflow:hidden;
+}
+.triangle:before {
+	content:'';
+    position:absolute;
+    top:-2%;
+    right:0;
+    width:300%;
+    padding-bottom:200%;
+    border-radius:240%;
+    background:none;
+    -webkit-box-shadow: 200px -10px 200px 200px #000000;
+    box-shadow: 200px -10px 200px 200px #000000;
+    z-index:-1;
+    -webkit-animation: flashOne 3s linear;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+.triangleTwo {
+	left: 40px;
+	bottom: 110px;
+	height: 100px;
+    width: 100px;
+    position:relative;
+    overflow:hidden;
+    -webkit-transform: rotate(-90deg); 
+}
+.triangleTwo:before {
+	content:'';
+    position:absolute;
+    top:-2%;
+    right:0;
+    width:300%;
+    padding-bottom:200%;
+    border-radius:240%;
+    background:none;
+    -webkit-box-shadow: 200px -10px 200px 200px #000000;
+    box-shadow: 200px -10px 200px 200px #000000;
+    z-index:-1;
+    -webkit-animation: flashOne 3s linear;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: .5s;
+}
+.triangleThree {
+	left: 40px;
+	bottom: 10px;
+	height: 100px;
+    width: 100px;
+    position:relative;
+    overflow:hidden;
+    -webkit-transform: rotate(180deg); 
+}
+.triangleThree:before {
+	content:'';
+    position:absolute;
+    top:-2%;
+    right:0;
+    width:300%;
+    padding-bottom:200%;
+    border-radius:240%;
+    background:none;
+    -webkit-box-shadow: 200px -10px 200px 200px #000000;
+    box-shadow: 200px -10px 200px 200px #000000;
+    z-index:-1;
+    -webkit-animation: flashOne 3s linear;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 1s;
+}
+.triangleFour {
+	left: 250px;
+	bottom: 110px;
+	height: 100px;
+    width: 100px;
+    position:relative;
+    overflow:hidden;
+    -webkit-transform: rotate(90deg); 
+}
+.triangleFour:before {
+	content:'';
+    position:absolute;
+    top:-2%;
+    right:0;
+    width:300%;
+    padding-bottom:200%;
+    border-radius:240%;
+    background:none;
+    -webkit-box-shadow: 200px -10px 200px 200px #000000;
+    z-index:-1;
+    -webkit-animation: flashOne 3s linear;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 1.5s;
+}
+.Globe {
+	width: 250px;
+	position: fixed;
+	top: 460px;
+	left: 75px;
+}
+.border-button {
+	 text-align: center;
+	 padding-top: 10px;
+	 color: turquoise;
+	 width:100px;
+     height:40px;
+     background: black;
+     position: relative;
+	 float: right;
+	 margin-right: 20px;
+	 top: -80px;
+	 border-radius: 10px;
+}
+.border-button:hover {
+	-webkit-animation: Border .25s linear ;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation: Border .25s linear ;
+	-moz-animation-fill-mode: forwards;
+	color: turquoise;
+	text-decoration: none;
+}
+.border-button2 {
+	 text-align: center;
+	 color: turquoise;
+	 width:100px;
+     height:40px;
+     background: black;
+     position: relative;
+	 float: right;
+	 margin-right: 150px;
+	 top: -80px;
+	 border-radius: 10px;
+}
+.border-button2:hover {
+	-webkit-animation: Border .25s linear ;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation: Border .25s linear ;
+	-moz-animation-fill-mode: forwards;
+	color: turquoise;
+	text-decoration: none;
+}
+@keyframes Border {
+	100% {
+		box-shadow: inset 0 0 0 10px rgba(66, 244, 197,0.8);
+	}
+}
+
+@keyframes flashOne {
+	0% {
+		-webkit-box-shadow: 200px -10px 200px 200px #000000;
+	}
+	40% {
+		-webkit-box-shadow: 200px -10px 200px 200px #000000;
+	}
+	41% {
+		-webkit-box-shadow: 200px -10px 200px 200px #00ffcb;
+	}
+	49% {
+		-webkit-box-shadow: 200px -10px 200px 200px #000000
+	}
+	100%{
+		-webkit-box-shadow: 200px -10px 200px 200px #000000;
+	}
+}
+@keyframes border {
+  to {
+    stroke-dashoffset: -800;
+  }
+}
+@keyframes TextSlideThree {
+	0% {
+		color: rgba(255,255,255,0);
+		width: 0px;
+	}
+	50% {
+		left: 30px;
+		width: 60px;
+	}
+	100% {
+		color: turquoise;
+		background:-webkit-linear-gradient(left top,black, turquoise);
+		width: 340px;
+		left: 70px;
+	}
+}
+@-webkit-keyframes "pulse" {
+ 0% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+ }
+ 25% {
+    opacity: 0.8;
+    -webkit-transform: scale(1.4);
+ }
+ 50% {
+    opacity: 0.6;
+    -webkit-transform: scale(1.6);
+ }
+ 75% {
+    opacity: 0.4;
+    -webkit-transform: scale(1.8);
+ }
+ 100% {
+    opacity: 0.2;
+    -webkit-transform: scale(2.2);
+ }
+}
+
