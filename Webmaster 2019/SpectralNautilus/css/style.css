@@ -1,0 +1,67 @@
+body {
+  background-color: black;
+}
+
+
+.img-overlay-wrap {
+  position: relative;
+  display: inline-block; /* <= shrinks container to image size */
+  float: right;
+
+}
+
+.img-overlay-wrap img { /* <= optional, for responsiveness */
+   display: block;
+   max-width: 100%;
+   height: auto;
+   max-height: 630px ;
+
+}
+
+.img-overlay-wrap svg {
+  position: absolute;
+  opacity: 0.7;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.sidenav-trigger {
+  position: relative;
+  left: 10px;
+  top: 6px;
+  animation: bgColor 4s infinite alternate;
+}
+
+.carousel {
+opacity: 0.2;
+
+}
+.contents {
+  position: absolute;
+  width: 100%;
+}
+
+.band-title {
+  font-family: seaweed;
+}
+
+@font-face {
+  font-family: seaweed;
+  src: url('../css/SeaweedScript-Regular.ttf') format('truetype');
+}
+
+@keyframes bgColor {
+  0% {
+    color: red;
+
+  }
+  50% {
+    color: lime;
+
+  }
+  100% {
+    color: blue;
+
+  }
+}

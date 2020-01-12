@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="css/style.css" media= "screen">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<title>Spectral Nautilus </title>
+
+</head>
+<body>
+
+ <ul id="slide-out" class="sidenav">
+  <li><a href="#!">Second Link</a></li>
+  <li><div class="divider"></div></li>
+  <li><a class="subheader">Subheader</a></li>
+ </ul>
+ <a href="#" data-target="slide-out" class="sidenav-trigger"> <i class="material-icons">menu</i> </a>
+
+
+
+<div class="img-overlay-wrap">
+  <svg id="rainbow-box" width ="100%" height="100%">
+    <defs>
+        <linearGradient id="Gradient1">
+          <stop class="stop1" offset="0%"/>
+          <stop class="stop2" offset="12.5%"/>
+          <stop class="stop3" offset="25%"/>
+          <stop class="stop4" offset="37.5%"/>
+          <stop class="stop5" offset="50%"/>
+          <stop class="stop6" offset="62.5%"/>
+          <stop class="stop7" offset="75%"/>
+          <stop class="stop8" offset="100%"/>
+        </linearGradient>
+        <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="rgba(255,0,0,0.8)"/>
+          <stop offset="12.5%" stop-color="rgba(255,162,0,0.8)"/>
+          <stop offset="25%" stop-color="rgba(252,255,0,0.8)"/>
+          <stop offset="37.5%" stop-color="rgba(0,255,0,0.8)"/>
+          <stop offset="50%" stop-color="rgba(0,255,255,0.8)"/>
+          <stop offset="62.5%" stop-color="rgba(48,0,255,0.8)"/>
+          <stop offset="75%" stop-color="rgba(255,102,242,0.8)" />
+          <stop offset="100%" stop-color="rgba(255,185,202,0.8)"/>
+        </linearGradient>
+        <style type="text/css"><![CDATA[
+          #rect1 { fill: url(#Gradient1); }
+          .stop1 { stop-color: red; }
+          .stop2 { stop-color: black; stop-opacity: 0; }
+          .stop3 { stop-color: blue; }
+        ]]></style>
+    </defs>
+    <rect id="rainbow" height="40%" width="150%" x=100 y= 300 fill="url(#Gradient2)" transform="rotate(45)"  />
+    <animate 
+        xlink:href="#rainbow"
+        attributeName="y"
+        from="300"
+        to="-800" 
+        dur="4s"
+        begin="0s"
+        fill="remove"
+        repeatcount="indefinite"
+    />
+  </svg>
+  <img id="nautilus" class="responsive-img" src="Images/Nautilus2.png">
+  </div>
+<div class="contents">
+
+ <div class="col s12">
+
+    <div class="card black">
+      <div class="card-content white-text">
+
+        <span class="band-title card-title center-align">Card S Title</span>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel carousel-slider">
+    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
+    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
+    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
+    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
+  </div>
+       
+  <div class="row">
+    <div class="col s12">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Place</span>
+      </div>
+    </div>
+  </div>
+     <div class="col s12">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Card Title</span>
+      </div>
+    </div>
+  </div>
+     <div class="col s12">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Card Title</span>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+</div>
+
+
+
+  
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+</body>
+
+</html>
