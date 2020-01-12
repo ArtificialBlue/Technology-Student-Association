@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="css/style.css" media= "screen">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<title>Spectral Nautilus </title>
+
+</head>
+<body>
+
+ <ul id="slide-out" class="sidenav">
+  <li><a href="#!">Second Link</a></li>
+  <li><div class="divider"></div></li>
+  <li><a class="subheader">Subheader</a></li>
+ </ul>
+ <a href="#" data-target="slide-out" class="sidenav-trigger"> <i class="material-icons">menu</i> </a>
+
+<div class="container">
+
+<div class="img-overlay-wrap center-align">
+  <svg id="rainbow-box" width ="100%" height="100%">
+    <defs>
+        <linearGradient id="Gradient1">
+          <stop class="stop1" offset="0%"/>
+          <stop class="stop2" offset="50%"/>
+          <stop class="stop3" offset="100%"/>
+        </linearGradient>
+        <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+          <stop id="stpc1" offset="0%" stop-color="orange"/>
+          <stop id="stpc2" offset="50%" stop-color="gold"/>
+          <stop id="stpc3" offset="100%" stop-color="orange"/>
+        </linearGradient>
+        <style type="text/css"><![CDATA[
+          #rect1 { fill: url(#Gradient1); }
+          .stop1 { stop-color: red; }
+          .stop2 { stop-color: black; stop-opacity: 0; }
+          .stop3 { stop-color: blue; }
+        ]]></style>
+    </defs>
+    <rect id="rainbow" height="40%" width="150%" x=0 y= 0 fill="url(#Gradient2)" transform="rotate(90)"  />
+    <animate 
+        xlink:href="#rainbow"
+        attributeName="y"
+        from="300"
+        to="-1000" 
+        dur="4s"
+        begin="0s"
+        fill="remove"
+        repeatcount="indefinite"
+    />
+  </svg>
+  <img id="nautilus" class="responsive-img" src="Images/Engineering.png">
+  </div>
+
+  </div>
+
+
+
+
+  
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script>  
+
+var images = new Array ('Images/Engineering.png','Images/Computer-Science.png','Images/Architecture.png', 'Images/FACS.png');
+var color1 = new Array ('orange','yellow','cyan','white');
+var color2 = new Array ('gold','lemonchiffon','lightcyan','grey');
+var index = 1;
+ 
+function rotateImage()
+{
+  $('#nautilus').fadeOut('fast', function() 
+  {
+    $('#nautilus').attr('src', images[index]);
+    $('#stpc1').attr('stop-color', color1[index]);
+    $('#stpc2').attr('stop-color', color2[index]);
+    $('#stpc3').attr('stop-color', color1[index]);
+    
+    
+    $('#nautilus').fadeIn('fast', function() 
+    {
+      if (index == images.length-1)
+      {
+        index = 0;
+      }
+      else
+      {
+        index++;
+      }
+    });
+
+  });
+
+
+
+  setTimeout(rotateImage,4000);
+} 
+ 
+$(document).ready(function()
+{
+  setTimeout(function(){
+  $(rotateImage);
+}, 4000);
+});
+</script>
+</body>
+
+</html>
